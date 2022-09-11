@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <section class="header">
+        <div class="header-block">
+            <h1>Моя библиотека</h1>
+            <p>Тут вы найдете разные программы на JavaScript(ES6)</p>
+        </div>
+    </section>
+
+    <section class="body">
+        <h1>Приложения</h1>
+        <div class="body-apps">
+            <div class="body-apps-calc">
+                <h1>=</h1>
+            </div>
+            <div class="body-apps-timer">
+                <h1>0:00</h1>
+            </div>
+            <div class="body-apps-life">
+                <h1>Life</h1>
+            </div>
+        </div>
+        <h1>Симулятор ткани</h1>
+        <canvas id="canvas"></canvas>
+    </section>
+
+    <div class="modal">
+        <button class="modal-close">x</button>
+    </div>
+
+   <article class="calc">
+    <output class="calc__result" id="result"></output>
+
+    <button type="button" class="calc__btn">7</button>
+    <button type="button" class="calc__btn">8</button>
+    <button type="button" class="calc__btn">9</button>
+    <button type="button" class="calc__btn calc__btn_operator">+</button>
+
+    <button type="button" class="calc__btn">4</button>
+    <button type="button" class="calc__btn">5</button>
+    <button type="button" class="calc__btn">6</button>
+    <button type="button" class="calc__btn calc__btn_operator">-</button>
+
+    <button type="button" class="calc__btn">1</button>
+    <button type="button" class="calc__btn">2</button>
+    <button type="button" class="calc__btn">3</button>
+    <button type="button" class="calc__btn calc__btn_operator">*</button>
+
+    <button type="button" class="calc__btn">0</button>
+    <button type="button" class="calc__btn">.</button>
+    <button type="button" class="calc__btn">00</button>
+    <button type="button" class="calc__btn calc__btn_operator">/</button>
+
+    <button type="button" class="calc__btn calc__btn_reset">C</button>
+    <button type="button" class="calc__btn calc__btn_equal">=</button>
+   </article>
+
+   <div class="time">
+    <h1 class="heading">Времени осталось:</h1>
+    <div class="timer" id="timer"></div>
+    <button class="btn start-btn">Начать отсчет</button>
+    <button class="btn stop-btn">Остановить отсчет</button>
+   </div>
+
+   <div class="life">
+    <canvas id="c1" width="300" height="300"></canvas>
+    <p>Количество циклов: <span id="count">0</span></p>
+    <button id="startGame">Начать</button> 
+   </div>
+   
+   <script src="js/tkan.js"></script>
+    <script src="js/modal.js"></script>
+
+</body>
+</html>
